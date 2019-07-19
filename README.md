@@ -1,24 +1,68 @@
-# README
+# <Project Name>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<Project Description>
 
-Things you may want to cover:
+This app powers <Project Name> located [here](Heroku Project URL)
 
-* Ruby version
+## Getting Started
 
-* System dependencies
+## Software requirements
 
-* Configuration
+- Rails 5.0.0 or higher
 
-* Database creation
+- Ruby 2.3.1 or higher
 
-* Database initialization
+- PostgreSQL 9.5.x or higher
 
-* How to run the test suite
+## Navigate to the Rails application
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+$ cd /path/to/rails/application
+```
 
-* Deployment instructions
+Note: You may need to edit the above files as necessary for your system.
 
-* ...
+## Create the database
+
+```
+$ pgstart
+$ rake db:create
+```
+
+## Migrating and seeding the database
+
+```
+$ rake db:migrate
+$ rake db:seed
+```
+
+## Starting the local server
+
+```
+$ rails server
+
+   or
+
+$ rails s
+```
+
+## Production Deployment
+
+```
+$ git push heroku master
+$ heroku run rake db:migrate
+```
+
+## Support
+
+Bug reports and feature requests can be filed with the rest for the Ruby on Rails project here:
+
+- [File Bug Reports and Features](https://github.com/<user-name>/<project-repo>/issues)
+
+## License
+
+<Project Name> is released under the [MIT license](https://mit-license.org).
+
+## Copyright
+
+copyright:: (c) Copyright 2019 <First Name> <Last Name>. All Rights Reserved.
